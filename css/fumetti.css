@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat&display=swap");
+
+.box-text {
+  font-family: "Cinzel", serif;
+  font-size: 1.5vw;
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+  font-size: 4vw;
+}
+
+h2 {
+  font-family: "Cinzel", serif;
+  font-size: 2vw;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vw;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------- */
+
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  background-color: black;
+}
+
+#l1 {
+  z-index: 1000;
+  position: absolute;
+  top: 10px;
+  margin-left: 50px;
+}
+
+ul {
+  color: white;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------- */
+
+.presentation-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.rect-left {
+  position: absolute;
+  display: flex;
+  left: 10%;
+  width: 35vw;
+  height: 35vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  border: 5px solid white;
+}
+
+.rect-content {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.imm-over {
+  width: 100%;
+  height: auto;
+}
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------- */
+
+.section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .text {
+    width: 50%;
+  }
+
+  /* -- --------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------- */
+
+.comics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  width: 70%;
+  column-gap: 100px;
+  row-gap: 55px;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.comics-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------- */
+
+.footer-section {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 14vw;
+  }
+  
+  .footer-content {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer-text {
+    width: 30%;
+  }
+  
+  .footer-font-size {
+    color: white;
+    font-size: 1vw;
+  }
+  
+  .footer-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+  }
+  
+  .socials {
+    width: 12%;
+    aspect-ratio: 1/1;
+  }
+  
+  #logo-footer {
+    width: 100%;
+  }

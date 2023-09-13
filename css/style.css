@@ -305,10 +305,18 @@ body {
   justify-content: center;
   margin-top: 20px;
   width: 100%;
-  height: 14vw;
 }
 
-.footer-content {
+.footer-content-1 {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.footer-content-2 {
   width: 90%;
   display: flex;
   align-items: center;
@@ -371,9 +379,20 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  p {
+    font-size: 3vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  .box-text {
+    font-size: 4vw;
+  }
+
   .section-card {
-    width: 100%;
-    margin: unset;
+    margin: 10%;
     margin-top: 10%;
     margin-bottom: 10%;
   }
@@ -435,24 +454,33 @@ body {
     max-width: 60%;
   }
 
-  p {
-    font-size: 4vw;
-  }
-
-  h2 {
-    font-size: 7vw;
-  }
-
-  .box-text {
-    font-size: 4vw;
-  }
-
   .introduction {
-    max-width: 90%;
+    max-width: 100%;
+  }
+
+  .footer-text {
+    width: 60%;
+  }
+
+  .footer-font-size {
+    color: white;
+    font-size: 2vw;
   }
 }
 
 @media screen and (max-width: 425px) {
+  h2 {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+
+  .box-text {
+    font-size: 4vw;
+  }
+
   .presentation-left {
     display: flex;
     align-items: center;
@@ -505,26 +533,39 @@ body {
 
   .card-font-size {
     font-size: 6vw;
-  }
-
-  p {
-    font-size: 12pt;
-  }
-
-  h2 {
-    font-size: 22pt;
-  }
-
-  .box-text {
-    font-size: 4vw;
   }
 
   .introduction {
     max-width: 90%;
   }
+
+  .footer-text {
+    width: 60%;
+  }
+
+  .footer-font-size {
+    color: white;
+    font-size: 2.5vw;
+  }
 }
 
 @media screen and (max-width: 320px) {
+  .card-font-size {
+    font-size: 6vw;
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+
+  .box-text {
+    font-size: 4vw;
+  }
+
   .presentation-left {
     display: flex;
     align-items: center;
@@ -573,22 +614,6 @@ body {
 
   .card {
     max-width: 60%;
-  }
-
-  .card-font-size {
-    font-size: 6vw;
-  }
-
-  p {
-    font-size: 12pt;
-  }
-
-  h2 {
-    font-size: 18pt;
-  }
-
-  .box-text {
-    font-size: 4vw;
   }
 
   .introduction {

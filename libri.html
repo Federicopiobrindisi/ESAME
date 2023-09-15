@@ -5,19 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Witcher</title>
-    <link rel="stylesheet" href="css/style-2.css">
-    <link rel="icon" href="/immagini/favicon">
+    <link rel="stylesheet" href="css/libri-fumetti.css">
+    <link rel="icon" href="immagini/favicon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat&display=swap"
         rel="stylesheet">
 </head>
 
+<!-- -------------------------------------------------------------------------------------------------------------------- 
+-------------------------------------------------------------------------------------------------------------------- -->
+
 <body style="background-color: #D9D9D9;">
-    
+
     <header>
         <nav class="top-nav">
-                <a id="logo1" href="index.html"><img src="immagini/the-witcher-titolo.svg" alt="logotipo" width="200px"></a>
+            <a id="logo1" href="index.html"><img src="immagini/the-witcher-titolo.svg" alt="logotipo"></a>
             <input id="menu-toggle" type="checkbox" />
             <label class='menu-button-container' for="menu-toggle">
                 <div class='menu-button'></div>
@@ -26,8 +29,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="mondo.html">Mondo</a></li>
                 <li><a href="giochi.html">Giochi</a></li>
-                <li>SerieTV</li>
-                <li><a href="libri.html">Libri</a></li>
+                <li><a href="serietv.html">SerieTV</a></li>
+                <li><a id="active" href="libri.html">Libri</a></li>
                 <li><a href="fumetti.html">Fumetti</a></li>
             </ul>
         </nav>
@@ -44,7 +47,7 @@
             </div>
         </div>
 
-        <img class="imm-over" src="/immagini/libri/section-libri-1.jpg" alt="immagine panoramica">
+        <img class="imm-over" src="immagini/libri/section-libri-1.jpg" alt="immagine panoramica">
     </section>
 
     <!-- -------------------------------------------------------------------------------------------------------------------- 
@@ -52,8 +55,7 @@
 
     <section class="section-text">
         <div class="text">
-            <h2>Libri</h2>
-
+            <h2>LIBRI</h2>
             <p>Il primo racconto, “The Witcher (1986)” fu scritto, per un capriccio dell’autore “Andrzej Sapkowski”, col
                 fine di partecipare a un concorso della rivista polacca di fantascienza e fantasy: Fantastyka.<br><br>La
                 storia fu pubblicata nel 1986 e ebbe un enorme successo sia tra i lettori che con la critica. Il
@@ -68,25 +70,24 @@
     <!-- -------------------------------------------------------------------------------------------------------------------- 
 -------------------------------------------------------------------------------------------------------------------- -->
 
-    <section class="book-grid">
+    <section id="libri" class="book-grid">
+
         <div class="book-grid-container">
-
-            <img class="book-img" src="/immagini/libri/libro-1.webp" alt="libro 1">
-            <img class="book-img" src="/immagini/libri/libro-2.webp" alt="libro 2">
-            <img class="book-img" src="/immagini/libri/libro-3.webp" alt="libro 3">
-            <img class="book-img" src="/immagini/libri/libro-4.webp" alt="libro 4">
-            <img class="book-img" src="/immagini/libri/libro-5.webp" alt="libro 5">
-            <img class="book-img" src="/immagini/libri/libro-6.webp" alt="libro 6">
-            <img class="book-img" src="/immagini/libri/libro-7.webp" alt="libro 7">
-            <img class="book-img" src="/immagini/libri/libro-8.webp" alt="libro 8">
-
+            <a class="book-grid-content" href="libro-1.html"><img class="book-img" src="immagini/libri/libro-1.webp" alt="libro 1"></a>
+            <a class="book-grid-content" href="libro-2.html"><img class="book-img" src="immagini/libri/libro-2.webp" alt="libro 2"></a>
+            <a class="book-grid-content" href="libro-3.html"><img class="book-img" src="immagini/libri/libro-3.webp" alt="libro 3"></a>
+            <a class="book-grid-content" href="libro-4.html"><img class="book-img" src="immagini/libri/libro-4.webp" alt="libro 4"></a>
+            <a class="book-grid-content" href="libro-5.html"><img class="book-img" src="immagini/libri/libro-5.webp" alt="libro 5"></a>
+            <a class="book-grid-content" href="libro-6.html"><img class="book-img" src="immagini/libri/libro-6.webp" alt="libro 6"></a>
+            <a class="book-grid-content" href="libro-7.html"><img class="book-img" src="immagini/libri/libro-7.webp" alt="libro 7"></a>
+            <a class="book-grid-content" href="libro-8.html"><img class="book-img" src="immagini/libri/libro-8.webp" alt="libro 8"></a>
         </div>
     </section>
 
     <!-- -------------------------------------------------------------------------------------------------------------------- 
 -------------------------------------------------------------------------------------------------------------------- -->
 
-    <section class="section-text">
+    <section id="autore" class="section-text">
         <div class="text">
             <h2>ANDRZEJ SAPKOWSKI</h2>
             <p>Nonostante gli studi di economia, ha sempre amato raccontare storie e, alla fine degli anni ’80, con la
@@ -102,8 +103,8 @@
 
     <section class="author-img">
         <div class="img-grid">
-            <img src="/immagini/ANDRZEJ SAPKOWSKI/1.webp" alt="autore+ascia">
-            <img src="/immagini/ANDRZEJ SAPKOWSKI/2-1-ANDRZEJ SAPKOWSKI.JPG" alt="autore2" class="author-crop">
+            <img src="immagini/ANDRZEJ SAPKOWSKI/1.webp" alt="autore+ascia">
+            <img src="immagini/ANDRZEJ SAPKOWSKI/2-1-ANDRZEJ SAPKOWSKI.JPG" alt="autore2" class="author-crop">
 
         </div>
     </section>
@@ -111,46 +112,47 @@
     <!-- -------------------------------------------------------------------------------------------------------------------- 
 -------------------------------------------------------------------------------------------------------------------- -->
 
-    <footer>
-        <div class="footer-section">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p class="footer-font-size">All other copyrights and trademarks are the property of their respective
-                        owners.</p>
-                </div>
+<footer>
+    <div class="footer-section">
+        <div class="footer-content-1">
+            <div class="footer-text">
+                <p class="footer-font-size">All other copyrights and trademarks are the property of their respective
+                    owners.</p>
+            </div>
 
-                <div class="footer-img">
-                    <img class="socials" src="immagini/footer/discord-logo.svg" alt="discord">
-                    <img class="socials" src="immagini/footer/facebook-logo.svg" alt="facebook">
-                    <img class="socials" src="immagini/footer/instagram-logo.svg" alt="instagram">
-                    <img class="socials" src="immagini/footer/netflix-logo.svg" alt="netflix">
-                    <img class="socials" src="immagini/footer/twitter-logo.svg" alt="twitter">
-                    <img class="socials" src="immagini/footer/youtube-logo.svg" alt="you tube">
-                </div>
+            <div class="footer-img">
+                <img class="socials" src="immagini/footer/discord-logo.svg" alt="discord">
+                <img class="socials" src="immagini/footer/facebook-logo.svg" alt="facebook">
+                <img class="socials" src="immagini/footer/instagram-logo.svg" alt="instagram">
+                <img class="socials" src="immagini/footer/netflix-logo.svg" alt="netflix">
+                <img class="socials" src="immagini/footer/twitter-logo.svg" alt="twitter">
+                <img class="socials" src="immagini/footer/youtube-logo.svg" alt="you tube">
             </div>
         </div>
+    </div>
 
-        <div class="footer-section">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p class="footer-font-size">THE WITCHER®, The Witcher® are registered trademarks of DREAM TEAM
-                        Capital
-                        Group. The Witcher© DREAM
-                        TEAM
-                        S.A. Developed by DREAM TEAM S.A. All rights reserved. The Witcher is set in the universe
-                        created by
-                        Andrzej Sapkowski in his series of books. </p>
-                </div>
+    <div class="footer-section">
+        <div class="footer-content-2">
+            <div class="footer-text">
+                <p class="footer-font-size">THE WITCHER®, The Witcher® are registered trademarks of DREAM TEAM
+                    Capital
+                    Group. The Witcher© DREAM
+                    TEAM
+                    S.A. Developed by DREAM TEAM S.A. All rights reserved. The Witcher is set in the universe
+                    created by
+                    Andrzej Sapkowski in his series of books. </p>
+            </div>
 
-                <div class="footer-img">
-                    <img id="logo-footer" src="immagini/the-witcher-titolo.svg" alt="the witcher">
-                </div>
+            <div class="footer-img">
+                <img id="logo-footer" src="immagini/the-witcher-titolo.svg" alt="the witcher">
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
     <!-- -------------------------------------------------------------------------------------------------------------------- 
 -------------------------------------------------------------------------------------------------------------------- -->
 
 </body>
+
 </html>

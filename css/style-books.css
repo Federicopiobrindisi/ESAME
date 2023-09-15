@@ -1,0 +1,773 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat&display=swap");
+
+.box-text {
+  font-family: "Cinzel", serif;
+  font-size: 1.5vw;
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+  font-size: 4vw;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Cinzel", serif;
+  font-size: 2vw;
+
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vw;
+}
+
+#active{
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color:#ff0000;
+  text-decoration-thickness: 2px;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+.menu a:hover {
+  color: #ff0000;
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------- */
+
+.top-nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  width: 100%;
+  height: 70px;
+  z-index: 100;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 2%;
+  font-size: 16pt;
+}
+
+.menu>li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  padding-right: 10%;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+#logo1 {
+  padding-left: 2%;
+}
+
+@media (max-width: 768px) {
+  .top-nav {
+    height: 40px;
+  }
+
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 40px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle~.menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-toggle:checked~.menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu>li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+    z-index: 200;
+  }
+
+  .menu>li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------- */
+
+.presentation-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.rect-left {
+  position: absolute;
+  display: flex;
+  left: 10%;
+  width: 35vw;
+  height: 35vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  border: 5px solid white;
+}
+
+.rect-content {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.imm-over {
+  width: 100%;
+  
+}
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------- */
+
+/*============================testo personaggi + imaggine GRIGLIA ================================ */
+.book-grid {
+  padding: 5% 0;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  column-gap: 4vw;
+}
+
+
+.book-grid img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.book-text {
+  max-width: 50%;
+}
+
+
+
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+  TESTI-------------------------------------------------------------------------------------------------------------------- */
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70%;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.text {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+  card-------------------------------------------------------------------------------------------------------------------- */
+
+
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: -0.3vw -0.3vw 0.6vw 0.5vw rgba(0, 0, 0, 0.48);
+    border: 2px solid white;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card h2 {
+    font-size: 1.5vw;
+  }
+  
+  .all-card img {
+    max-width: 100%;
+  }
+  
+  .all-card {
+    width: 60%;
+    display: flex;
+    row-gap: 5%;
+    column-gap: 5%;
+    margin-top: 5%;
+  }
+
+.footer-img {
+  width: 100%;
+}
+
+
+/*====================================================================== */
+
+.footer-section {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 14vw;
+}
+
+.footer-content {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-text {
+  width: 30%;
+}
+
+.footer-font-size {
+  color: white;
+  font-size: 1vw;
+}
+
+.footer-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+
+.socials {
+  width: 12%;
+  aspect-ratio: 1/1;
+}
+
+#logo-footer {
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+  h2 {
+    font-size: 2.5vw;
+  }
+
+  .card-font-size {
+    font-size: 1.7vw;
+  }
+
+  p {
+    font-size: 1.7vw;
+  }
+
+  .introduction {
+    max-width: 55%;
+  }
+
+  /*============================testo personaggi + imaggine GRIGLIA ================================ */
+  .book-grid {
+    padding: 5% 0;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    column-gap: 4vw;
+  }
+
+  .book-grid img {
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .book-text {
+    max-width: 60%;
+  }
+
+  .book-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 3rem;
+    column-gap: 1rem;
+    justify-items: center;
+  
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 12vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 3vw;
+  }
+
+  .presentation-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rect-left {
+    position: absolute;
+    display: flex;
+    left: unset;
+    width: 90vw;
+    height: 90vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    border: 5px solid white;
+  }
+
+  .text-game {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imm-over {
+    object-fit: cover;
+    height: 120vw;
+  }
+
+  /*============================testo personaggi + imaggine GRIGLIA ================================ */
+  .book-grid {
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    column-gap: 4rem;
+  }
+
+  .book-img-1 {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .book-grid img {
+    max-width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .book-text {
+    max-width: unset;
+  }
+
+  .book-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5rem;
+    column-gap: 1rem;
+  
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+
+
+
+.book-text2 {
+
+  max-width: 70%;
+
+}
+
+/*============================card finali ================================ */
+
+
+.card h2 {
+  font-size: 2vw;
+}
+
+.all-card img {
+  max-width: 100%;
+}
+
+.all-card {
+  width: 70%;
+  display: flex;
+  row-gap: 5%;
+  column-gap: 5%;
+  margin-top: 5%;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 426px) {
+
+  h1 {
+    font-size: 12vw;
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+
+
+  .presentation-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rect-left {
+    position: absolute;
+    display: flex;
+    left: unset;
+    width: 90vw;
+    height: 90vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    border: 5px solid white;
+  }
+
+  .text-game {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imm-over {
+    object-fit: cover;
+    height: 120vw;
+  }
+
+  .introduction {
+    max-width: 75%;
+
+  }
+
+  .all-cards h2 {
+    font-size: 5vw;
+  }
+
+  .text {
+    width: 85%;
+  }
+
+  .book-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+    column-gap: 0.5rem;
+
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .img-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    width: 70%;
+    margin: auto;
+  }
+
+  /*============================testo personaggi + imaggine GRIGLIA ================================ */
+  .book-grid {
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    column-gap: 4rem;
+  }
+
+  .book-img-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .book-grid img {
+    max-width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .book-text {
+    max-width: 70%;
+  }
+
+
+  /*============================card finali ================================ */
+
+
+  .card h2 {
+    font-size: 3vw;
+  }
+
+  .all-card img {
+    max-width: 100%;
+  }
+
+  .all-card {
+    width: 85%;
+    display: flex;
+    row-gap: 5%;
+    column-gap: 5%;
+    margin-top: 5%;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+  h1 {
+    font-size: 12vw;
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+
+
+  .presentation-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rect-left {
+    position: absolute;
+    display: flex;
+    left: unset;
+    width: 90vw;
+    height: 90vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    border: 5px solid white;
+  }
+
+  .text-game {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imm-over {
+    object-fit: cover;
+    height: 120vw;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+
+  .book-grid img {
+    max-width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+
+
+  /*============================card finali ================================ */
+
+
+  .card h2 {
+    font-size: 3.5vw;
+  }
+
+  .all-card img {
+    max-width: 100%;
+  }
+
+  .all-card {
+    width: 100%;
+    display: flex;
+    row-gap: 5%;
+    column-gap: 5%;
+    margin-top: 5%;
+  }
+
+}

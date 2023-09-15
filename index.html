@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Witcher</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="immagini/favicon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
                 <div class='menu-button'></div>
             </label>
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a id="active" href="index.html">Home</a></li>
                 <li><a href="mondo.html">Mondo</a></li>
                 <li><a href="giochi.html">Giochi</a></li>
                 <li><a href="serietv.html">SerieTV</a></li>
@@ -61,26 +61,20 @@
 
         <div class="all-cards">
 
-            <div class="card">
-                <img class="card-img" src="immagini/home/card-home/card-libri.jpg" alt="card-image">
-                <div class="text-card">
+            <a class="card" href="libri.html#libri">
+                <img src="immagini/home/card-home/card-libri.jpg" alt="card-image">
                     <h2 class="card-font-size">LIBRI</h2>
-                </div>
-            </div>
+            </a>
 
-            <div class="card">
-                <img class="card-img" src="immagini/home/card-home/card-fumetti.jpg" alt="card-image">
-                <div class="text-card">
+            <a class="card" href="fumetti.html">
+                <img src="immagini/home/card-home/card-fumetti.jpg" alt="card-image">
                     <h2 class="card-font-size">FUMETTI</h2>
-                </div>
-            </div>
+            </a>
 
-            <div class="card">
-                <img class="card-img" src="immagini/home/card-home/card-autore.jpg" alt="card-image">
-                <div class="text-card">
+            <a class="card" href="libri.html#autore">
+                <img src="immagini/home/card-home/card-autore.jpg" alt="card-image">
                     <h2 class="card-font-size">AUTORE</h2>
-                </div>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -118,25 +112,19 @@
 
         <div class="all-cards">
 
-            <a class="card" href="giochi.html#giochi" class="card">
-                <img class="card-img" src="immagini/home/card-home/card-giochi.jpg" alt="card-image">
-                <div class="text-card">
+            <a class="card" href="giochi.html#giochi">
+                <img src="immagini/home/card-home/card-giochi.jpg" alt="card-image">
                     <h2 class="card-font-size">GIOCHI</h2>
-                </div>
             </a>
 
             <a class="card" href="giochi.html#gwent" class="card">
-                <img class="card-img" src="immagini/home/card-home/card-gwent.jpg" alt="card-image">
-                <div class="text-card">
+                <img src="immagini/home/card-home/card-gwent.jpg" alt="card-image">
                     <h2 class="card-font-size">GWENT</h2>
-                </div>
             </a>
 
             <a class="card" href="giochi.html#cd-projekt">
-                <img class="card-img" src="immagini/home/card-home/card-cdprojekt.jpg" alt="card-image">
-                <div class="text-card">
+                <img src="immagini/home/card-home/card-cdprojekt.jpg" alt="card-image">
                     <h2 class="card-font-size">CD PROJEKT</h2>
-                </div>
             </a>
         </div>
     </section>
@@ -171,26 +159,20 @@
 
         <div class="all-cards">
 
-            <div class="card">
-                <img class="card-img" src="immagini/home/card-home/card-luoghi.jpg" alt="card-image">
-                <div class="text-card">
+            <a class="card" href="mondo.html#ambientazioni">
+                <img src="immagini/home/card-home/card-luoghi.jpg" alt="card-image">
                     <h2 class="card-font-size">LUOGHI</h2>
-                </div>
-            </div>
+            </a>
 
-            <div class="card">
-                <img class="card-img" src="immagini/home/card-home/card-personaggi.jpg" alt="card-image">
-                <div class="text-card">
+            <a class="card" href="mondo.html#personaggi">
+                <img src="immagini/home/card-home/card-personaggi.jpg" alt="card-image">
                     <h2 class="card-font-size">PERSONAGGI</h2>
-                </div>
-            </div>
+            </a>
 
-            <div class="card">
-                <img class="card-img" src="immagini/home/card-home/card-mostri.jpg" alt="card-image">
-                <div class="text-card">
+            <a class="card" href="mondo.html#mostri">
+                <img src="immagini/home/card-home/card-mostri.jpg" alt="card-image">
                     <h2 class="card-font-size">MOSTRI</h2>
-                </div>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -200,7 +182,7 @@
     <section class="presentation-right">
         <div class="rect-right">
             <div class="rect-content">
-                <h2 class="box-text">La serie esplora temi come il destino, la moralità, la convivenza tra esseri umani
+                <h2 id="quadrato-n4" class="box-text">La serie esplora temi come il destino, la moralità, la convivenza tra esseri umani
                     e creature magiche, e la lotta per il potere in un mondo in cui le linee tra il bene e il male
                     spesso si confondono.<br><br> I libri e i giochi si concentrano sulla ricerca di Geralt per il suo
                     posto nel mondo e sul suo
@@ -224,12 +206,20 @@
 
         <div class="all-cards">
 
-            <div class="card">
-                <img class="card-img" src="immagini/home/card-home/card-serie-tv.jpg" alt="card-image">
-                <div class="text-card">
+            <a id="fake-1" class="card">
+                <img src="immagini/home/card-home/card-serie-tv.jpg" alt="card-image">
                     <h2 class="card-font-size">SERIE TV</h2>
-                </div>
-            </div>
+            </a>
+
+            <a class="card" href="serietv.html">
+                <img src="immagini/home/card-home/card-serie-tv.jpg" alt="card-image">
+                    <h2 class="card-font-size">SERIE TV</h2>
+            </a>
+
+            <a id="fake-2" class="card">
+                <img src="immagini/home/card-home/card-serie-tv.jpg" alt="card-image">
+                    <h2 class="card-font-size">SERIE TV</h2>
+            </a>
 
         </div>
     </section>

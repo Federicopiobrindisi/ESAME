@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Witcher</title>
-    <link rel="stylesheet" href="css/fumetti.css">
-    <link rel="icon" href="/immagini/favicon">
+    <link rel="stylesheet" href="css/libri-fumetti.css">
+    <link rel="icon" href="immagini/favicon">
 </head>
+
+<!-- -------------------------------------------------------------------------------------------------------------------- 
+-------------------------------------------------------------------------------------------------------------------- -->
 
 <body style="background-color: #D9D9D9;">
 
     <header>
         <nav class="top-nav">
-                <a id="logo1" href="index.html"><img src="immagini/the-witcher-titolo.svg" alt="logotipo" width="200px"></a>
+            <a id="logo1" href="index.html"><img src="immagini/the-witcher-titolo.svg" alt="logotipo"></a>
             <input id="menu-toggle" type="checkbox" />
             <label class='menu-button-container' for="menu-toggle">
                 <div class='menu-button'></div>
@@ -22,9 +25,9 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="mondo.html">Mondo</a></li>
                 <li><a href="giochi.html">Giochi</a></li>
-                <li>SerieTV</li>
+                <li><a href="serietv.html">SerieTV</a></li>
                 <li><a href="libri.html">Libri</a></li>
-                <li><a href="fumetti.html">Fumetti</a></li>
+                <li><a id="active" href="fumetti.html">Fumetti</a></li>
             </ul>
         </nav>
     </header>
@@ -39,7 +42,7 @@
             </div>
         </div>
 
-        <img class="imm-over" src="immagini/fumetti/background-fumetti.png" alt="immagine panoramica">
+        <img class="imm-over" src="immagini/fumetti/witcher-comics.png" alt="immagine panoramica">
     </section>
 
     <!-- -------------------------------------------------------------------------------------------------------------------- 
@@ -60,59 +63,70 @@
     <!-- -------------------------------------------------------------------------------------------------------------------- 
 -------------------------------------------------------------------------------------------------------------------- -->
 
-    <section class="comics-grid">
-        <div><img src="immagini/fumetti/1-la-cas-di-vetro.webp" alt="fumetto 1"></div>
-        <div><img src="immagini/fumetti/2-i-figli-della-volpe.webp" alt="fumetto 2"></div>
-        <div><img src="immagini/fumetti/3-killing-monster.webp" alt="fumetto 3"></div>
-        <div><img src="immagini/fumetti/4-la-maledizione-dei-corvi.webp" alt="fumetto 4"></div>
-        <div><img src="immagini/fumetti/5-di-carne-e-fiamme.webp" alt="fumetto 5"></div>
-        <div><img src="immagini/fumetti/6-ricordi-sbiaditi.webp" alt="fumetto 6"></div>
-        <div><img src="immagini/fumetti/7-il lamento-della-strega.webp" alt="fumetto 7"></div>
-        <div><img src="immagini/fumetti/8-un-briciolo-di-verità.webp" alt="fumetto 8"></div>
-        <div><img src="immagini/fumetti/9-ronin.webp" alt="fumetto 9"></div>
+    <section class="book-grid">
 
+        <div class="book-grid-container">
+            <a class="book-grid-content" href="fumetto-1.html"><img class="book-img" src="immagini/fumetti/1-la-cas-di-vetro.webp"
+                    alt="fumetto 1"></a>
+            <a class="book-grid-content" href="fumetto-2.html"><img class="book-img" src="immagini/fumetti/2-i-figli-della-volpe.webp"
+                    alt="fumetto 2"></a>
+            <a class="book-grid-content" href="fumetto-3.html"><img class="book-img" src="immagini/fumetti/3-killing-monster.webp"
+                    alt="fumetto 3"></a>
+            <a class="book-grid-content" href="fumetto-4.html"><img class="book-img" src="immagini/fumetti/4-la-maledizione-dei-corvi.webp"
+                    alt="fumetto 4"></a>
+            <a class="book-grid-content" href="fumetto-5.html"><img class="book-img" src="immagini/fumetti/5-di-carne-e-fiamme.webp"
+                    alt="fumetto 5"></a>
+            <a class="book-grid-content" href="fumetto-6.html"><img class="book-img" src="immagini/fumetti/6-ricordi-sbiaditi.webp"
+                    alt="fumetto 6"></a>
+            <a class="book-grid-content" href="fumetto-7.html"><img class="book-img" src="immagini/fumetti/7-il lamento-della-strega.webp"
+                    alt="fumetto 7"></a>
+            <a class="book-grid-content" href="fumetto-8.html"><img class="book-img" src="immagini/fumetti/8-un-briciolo-di-verità.webp"
+                    alt="fumetto 8"></a>
+            <a class="book-grid-content" href="fumetto-9.html"><img class="book-img" src="immagini/fumetti/9-ronin.webp"
+                    alt="fumetto 9"></a>
+        </div>
     </section>
 
     <!-- -------------------------------------------------------------------------------------------------------------------- 
 -------------------------------------------------------------------------------------------------------------------- -->
 
     <footer>
-        <div class="footer-section">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p class="footer-font-size">All other copyrights and trademarks are the property of their respective
-                        owners.</p>
-                </div>
+    <div class="footer-section">
+        <div class="footer-content-1">
+            <div class="footer-text">
+                <p class="footer-font-size">All other copyrights and trademarks are the property of their respective
+                    owners.</p>
+            </div>
 
-                <div class="footer-img">
-                    <img class="socials" src="immagini/footer/discord-logo.svg" alt="discord">
-                    <img class="socials" src="immagini/footer/facebook-logo.svg" alt="facebook">
-                    <img class="socials" src="immagini/footer/instagram-logo.svg" alt="instagram">
-                    <img class="socials" src="immagini/footer/netflix-logo.svg" alt="netflix">
-                    <img class="socials" src="immagini/footer/twitter-logo.svg" alt="twitter">
-                    <img class="socials" src="immagini/footer/youtube-logo.svg" alt="you tube">
-                </div>
+            <div class="footer-img">
+                <img class="socials" src="immagini/footer/discord-logo.svg" alt="discord">
+                <img class="socials" src="immagini/footer/facebook-logo.svg" alt="facebook">
+                <img class="socials" src="immagini/footer/instagram-logo.svg" alt="instagram">
+                <img class="socials" src="immagini/footer/netflix-logo.svg" alt="netflix">
+                <img class="socials" src="immagini/footer/twitter-logo.svg" alt="twitter">
+                <img class="socials" src="immagini/footer/youtube-logo.svg" alt="you tube">
             </div>
         </div>
+    </div>
 
-        <div class="footer-section">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p class="footer-font-size">THE WITCHER®, The Witcher® are registered trademarks of DREAM TEAM
-                        Capital
-                        Group. The Witcher© DREAM
-                        TEAM
-                        S.A. Developed by DREAM TEAM S.A. All rights reserved. The Witcher is set in the universe
-                        created by
-                        Andrzej Sapkowski in his series of books. </p>
-                </div>
+    <div class="footer-section">
+        <div class="footer-content-2">
+            <div class="footer-text">
+                <p class="footer-font-size">THE WITCHER®, The Witcher® are registered trademarks of DREAM TEAM
+                    Capital
+                    Group. The Witcher© DREAM
+                    TEAM
+                    S.A. Developed by DREAM TEAM S.A. All rights reserved. The Witcher is set in the universe
+                    created by
+                    Andrzej Sapkowski in his series of books. </p>
+            </div>
 
-                <div class="footer-img">
-                    <img id="logo-footer" src="immagini/the-witcher-titolo.svg" alt="the witcher">
-                </div>
+            <div class="footer-img">
+                <img id="logo-footer" src="immagini/the-witcher-titolo.svg" alt="the witcher">
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 </body>
 

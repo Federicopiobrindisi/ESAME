@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Witcher</title>
     <link rel="stylesheet" href="css/style-character.css">
-    <link rel="icon" href="/immagini/favicon">
+    <link rel="icon" href="immagini/favicon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat&display=swap"
@@ -24,9 +24,9 @@
             </label>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="mondo.html">Mondo</a></li>
+                <li><a id="active" href="mondo.html">Mondo</a></li>
                 <li><a href="giochi.html">Giochi</a></li>
-                <li>SerieTV</li>
+                <li><a href="serietv.html">SerieTV</a></li>
                 <li><a href="libri.html">Libri</a></li>
                 <li><a href="fumetti.html">Fumetti</a></li>
             </ul>
@@ -39,7 +39,7 @@
     <section class="presentation-left">
         <div class="rect-left">
             <div class="rect-content">
-                <h2>GERALT DI RIVIA</h2>
+                <h1>GERALT DI RIVIA</h1>
             </div>
         </div>
 
@@ -54,16 +54,18 @@
         <div class="character-text">
             <h2>Il LUPO BIANCO</h2>
             <p>Geralt di Rivia è uno strigo, un cacciatore di mostri, dallo sguardo penetrante e capelli bianchi,
-                distintivi del suo addestramento e delle mutazioni che ha subito.
+                distintivi del suo addestramento e delle mutazioni che ha subito. <br><br>
+
                 È noto per la sua abilità nel combattere creature sovrannaturali che minacciano gli esseri umani.
-                Geralt non è solo un esperto combattente, ma anche un individuo riflessivo e filosofico.
+                Geralt non è solo un esperto combattente, ma anche un individuo riflessivo e filosofico.<br><br>
+
                 Cresciuto presso la Scuola del Lupo, un'accademia che addestra strighi,
                 Geralt è stato sottoposto a durissime prove e mutazioni alchemiche, rendendolo più forte e resistente.
                 Ha una spada in acciaio per affrontare gli umani e una in argento per combattere i mostri.</p>
         </div>
 
-        <div>
-            <img src="immagini/personaggi/geralt-1.webp" alt="immagine personaggio 1">
+        <div class="character-img">
+            <img id="geralt-1" src="immagini/personaggi/geralt-1.png" alt="immagine personaggio 1">
         </div>
 
     </section>
@@ -72,8 +74,8 @@
 -------------------------------------------------------------------------------------------------------------------- -->
 
     <section class="character-grid2">
-        <div>
-            <img src="immagini/personaggi/geralt-2.png" alt="immagine personaggio 2">
+        <div class="character-img2">
+            <img id="geralt-2" src="immagini/personaggi/geralt-2.png" alt="immagine personaggio 2">
 
         </div>
 
@@ -83,13 +85,16 @@
                 e misteri.
                 Nonostante il suo aspetto burbero e il ruolo di cacciatore di mostri, dimostra spesso compassione e
                 integrità morale,
-                cercando di fare la cosa giusta anche in un mondo spietato e cinico.
+                cercando di fare la cosa giusta anche in un mondo spietato e cinico.<br><br>
+
                 La sua vita prende una svolta significativa quando incontra Yennefer,
-                una potente maga, con cui instaura una relazione romantica complessa e intensa.
+                una potente maga, con cui instaura una relazione romantica complessa e intensa.<br><br>
+
                 Geralt ha anche una relazione particolare con Ciri,
                 una giovane principessa destinata a giocare un ruolo cruciale nella storia.
                 Geralt è un personaggio enigmatico e affascinante, amato dai fan per la sua abilità nel combattimento,
-                il suo umorismo pungente e la sua filosofia di vita.
+                il suo umorismo pungente e la sua filosofia di vita.<br><br>
+
                 Il suo viaggio nel mondo di The Witcher è pieno di avventure,
                 difficili scelte morali e il costante conflitto tra la sua natura da strigo e
                 il suo desiderio di trovare un senso di appartenenza nel mondo.</p>
@@ -99,6 +104,45 @@
 
     <!-- -------------------------------------------------------------------------------------------------------------------- 
 -------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <section class="section-text">
+        <div class="text">
+            <h2>PERSONAGGI</h2>
+
+        </div>
+        <div class="all-card">
+            <a href="yennifer.html">
+                <div class="card">
+                    <img src="immagini/mondo/card-yennefer.jpg" alt="kaer morher panoramica">
+                    <h2>YENNIFER</h2>
+                </div>
+            </a>
+
+            <a href="eredin.html">
+                <div class="card">
+                    <img src="immagini/mondo/card-eredin.jpg" alt="skellige panoramica">
+                    <h2>EREDIN</h2>
+                </div>
+            </a>
+
+            <a href="ciri.html">
+                <div class="card">
+                    <img src="immagini/mondo/card-ciri.jpg" alt="velen panoramica">
+                    <h2>CIRI</h2>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------- 
+-------------------------------------------------------------------------------------------------------------------- -->
+
+
 
     <footer>
         <div class="footer-section">

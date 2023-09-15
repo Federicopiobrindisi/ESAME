@@ -15,6 +15,13 @@ p {
   font-size: 1.5vw;
 }
 
+#active{
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color:#ff0000;
+  text-decoration-thickness: 2px;
+}
+
 .card-font-size {
   font-size: 2vw;
 }
@@ -42,6 +49,11 @@ a:active {
 
 a {
   color: inherit;
+}
+
+.menu a:hover {
+  color: #ff0000;
+  transition: all 0.2s ease-in-out;
 }
 
 body {
@@ -235,10 +247,8 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-
   align-items: center;
   background-color: white;
-
   box-shadow: -1vw -1vw 0.6vw 0.5vw rgba(0, 0, 0, 0.48);
   border: 2px solid white;
   transition: all 0.2s ease-in-out;
@@ -260,8 +270,8 @@ body {
   width: 70%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 5%;
-  column-gap: 5%;
+  row-gap: 4vw;
+  column-gap: 4vw;
   margin: auto;
   padding-top: 5%;
 }
@@ -330,11 +340,11 @@ footer {
     font-size: 2.5vw;
   }
 
-  .card-font-size {
+  p {
     font-size: 1.7vw;
   }
 
-  p {
+  .card-font-size {
     font-size: 1.7vw;
   }
 
@@ -396,8 +406,8 @@ footer {
     width: 70%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 40px;
-    column-gap: 40px;
+    row-gap: 6vw;
+    column-gap: 6vw;
     margin: auto;
     padding-top: 5%;
   }
@@ -465,8 +475,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 40px;
-    column-gap: 40px;
+    row-gap: 8vw;
+    column-gap: 4vw;
     padding-top: 5%;
   }
 

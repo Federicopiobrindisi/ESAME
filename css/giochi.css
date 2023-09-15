@@ -20,6 +20,13 @@ p {
   font-size: 1.5vw;
 }
 
+#active{
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color:#ff0000;
+  text-decoration-thickness: 2px;
+}
+
 a {
   text-decoration: none;
   display: flex;
@@ -43,6 +50,11 @@ a:active {
 
 a {
   color: inherit;
+}
+
+.menu a:hover {
+  color: #ff0000;
+  transition: all 0.2s ease-in-out;
 }
 
 body {
@@ -274,6 +286,11 @@ body {
   color: white;
   border: solid white 3px;
   padding: 10px 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
 }
 
 #arrow {
@@ -308,6 +325,10 @@ body {
 /* -- --------------------------------------------------------------------------------------------------------------------  
 -------------------------------------------------------------------------------------------------------------------- */
 
+footer {
+  margin-top: 10%;
+}
+
 .footer-section {
   background-color: black;
   display: flex;
@@ -316,7 +337,16 @@ body {
   width: 100%;
 }
 
-.footer-content {
+.footer-content-1 {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.footer-content-2 {
   width: 90%;
   display: flex;
   align-items: center;
@@ -399,6 +429,11 @@ body {
     border: 5px solid white;
   }
 
+  .imm-over {
+    object-fit: cover;
+    height: 120vw;
+  }
+
   .text-game {
     margin: 0;
     padding: 0;
@@ -408,11 +443,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .imm-over {
-    object-fit: cover;
-    height: 120vw;
   }
 
   .game-logo {

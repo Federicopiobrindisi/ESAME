@@ -408,14 +408,6 @@ width: 20%;
     height: 120vw;
   }
 
-  .footer-text {
-    width: 60%;
-  }
-
-  .footer-font-size {
-    color: white;
-    font-size: 2vw;
-  }
 
   .gameseries-grid {
     display: grid;
@@ -430,6 +422,25 @@ width: 20%;
     padding: 0;
     transition: all 0.2s ease-in-out;
   }
+
+  .footer-font-size {
+    color: white;
+    width: 70%;
+    margin: auto;
+    font-size: 2vw;
+  }
+
+  .footer-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+  }
+  
+  .footer-logo {
+  width: 30%;
+}
+
 }
 
 @media screen and (max-width: 425px) {
@@ -444,4 +455,26 @@ width: 20%;
   p {
     font-size: 4vw;
   }
+
+  .footer-font-size {
+    color: white;
+    margin: auto;
+    font-size: 3vw;
+  }
+
+  .footer-logo {
+    width: 40%;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+  }
+
+  .social img {
+    width: 100%;
+    height: auto;
+  }
+  
 }

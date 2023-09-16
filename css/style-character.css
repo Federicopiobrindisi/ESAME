@@ -21,21 +21,21 @@ p {
   font-size: 1.5vw;
 }
 
-#active{
+#active {
   text-decoration: underline;
   text-underline-offset: 8px;
-  text-decoration-color:#ff0000;
+  text-decoration-color: #ff0000;
   text-decoration-thickness: 2px;
 }
 
-.link{
+.link {
   text-decoration: underline;
   text-underline-offset: 8px;
-  text-decoration-color:#ff0000;
+  text-decoration-color: #ff0000;
   text-decoration-thickness: 2px;
 }
 
-.link:hover{
+.link:hover {
   color: #ff0000;
   transition: all 0.2s ease-in-out;
 }
@@ -259,7 +259,6 @@ body {
 /* -- --------------------------------------------------------------------------------------------------------------------  
 -------------------------------------------------------------------------------------------------------------------- */
 
-
 .character-grid {
   padding: 5% 0;
   display: flex;
@@ -279,11 +278,11 @@ body {
   margin: 0;
 }
 
-#yennefer-1{
+#yennefer-1 {
   width: 50%;
 }
 
-#ciri-1{
+#ciri-1 {
   width: 50%;
 }
 
@@ -380,7 +379,7 @@ body {
 /* -- --------------------------------------------------------------------------------------------------------------------  
 -------------------------------------------------------------------------------------------------------------------- */
 
-footer{
+footer {
   background-color: black;
 }
 
@@ -393,7 +392,6 @@ footer{
   padding-top: 5%;
   padding-bottom: 5%;
 }
-
 
 .footer-text {
   width: 100%;
@@ -412,7 +410,7 @@ footer{
   width: 50%;
 }
 
-.social{
+.social {
   display: inline-block;
   display: flex;
   justify-content: center;
@@ -422,22 +420,19 @@ footer{
   width: 100%;
 }
 
-.social img{
+.social img {
   width: 80%;
-height: auto;
+  height: auto;
 }
 
 .footer-logo {
-width: 20%;
-
-} 
+  width: 20%;
+}
 
 /* -- --------------------------------------------------------------------------------------------------------------------  
 -------------------------------------------------------------------------------------------------------------------- */
 
-
 @media screen and (max-width: 1024px) {
-
   h2 {
     font-size: 2.5vw;
   }
@@ -445,13 +440,15 @@ width: 20%;
   p {
     font-size: 1.7vw;
   }
-
 }
 
 /* -- --------------------------------------------------------------------------------------------------------------------  
 -------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
+  #title-yennifer {
+    font-size: 11vw;
+  }
 
   h1 {
     font-size: 13vw;
@@ -538,7 +535,7 @@ width: 20%;
     column-gap: 4vw;
     margin-top: 5%;
   }
-  
+
   .character-img {
     width: 100%;
     display: flex;
@@ -566,18 +563,16 @@ width: 20%;
     align-items: center;
     width: 70%;
   }
-  
-  .footer-logo {
-  width: 30%;
-}
 
+  .footer-logo {
+    width: 30%;
+  }
 }
 
 /* -- --------------------------------------------------------------------------------------------------------------------  
 -------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 426px) {
-
   h1 {
     font-size: 13vw;
   }
@@ -672,29 +667,27 @@ width: 20%;
     margin: auto;
     font-size: 3vw;
   }
-  
+
   .footer-logo {
-  width: 40%;
-}
+    width: 40%;
+  }
 
-.footer-container {
-  display: flex;
-  align-items: center;
-  width: 70%;
-}
+  .footer-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+  }
 
-.social img{
-  width: 100%;
-height: auto;
-}
-
+  .social img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* -- --------------------------------------------------------------------------------------------------------------------  
 -------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 320px) {
-
   h1 {
     font-size: 13vw;
   }
@@ -749,5 +742,4 @@ height: auto;
   .all-card img {
     max-width: 100%;
   }
-
 }

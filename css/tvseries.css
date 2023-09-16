@@ -21,10 +21,14 @@ p {
   font-size: 1.5vw;
 }
 
-#active{
+.title-rect-content {
+  margin: 0;
+}
+
+#active {
   text-decoration: underline;
   text-underline-offset: 8px;
-  text-decoration-color:#ff0000;
+  text-decoration-color: #ff0000;
   text-decoration-thickness: 2px;
 }
 
@@ -215,7 +219,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: white;
+  text-align: center;
 }
 
 .title-rect-content {
@@ -268,60 +274,63 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-.text{
+.text {
   width: 50%;
 }
 
 /*=======================================FOOTER================================================ */
 
-.footer-section {
+footer{
   background-color: black;
+}
+
+.footer-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
-  width: 100%;
+  align-items: center;
+  gap: 3vw;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.footer-content-1 {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
-.footer-content-2 {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .footer-text {
-  width: 30%;
+  width: 100%;
+  text-align: center;
 }
 
 .footer-font-size {
   color: white;
-  font-size: 1vw;
+  width: 85%;
+  margin: auto;
 }
 
-.footer-img {
+.footer-container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 30%;
+  width: 50%;
 }
 
-.socials {
-  width: 12%;
-  aspect-ratio: 1/1;
-}
-
-#logo-footer {
+.social{
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
+
+.social img{
+  width: 80%;
+height: auto;
+}
+
+.footer-logo {
+width: 20%;
+
+} 
 
 /*=============================MEDIA QUERY========================================== */
 
@@ -379,7 +388,7 @@ body {
     transition: all 0.2s ease-in-out;
   }
 
-  .text{
+  .text {
     width: unset;
   }
 
@@ -409,5 +418,19 @@ body {
     gap: 0;
     padding: 0;
     transition: all 0.2s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 13vw;
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 4vw;
   }
 }

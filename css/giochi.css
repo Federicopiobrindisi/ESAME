@@ -220,7 +220,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: white;
+  text-align: center;
 }
 
 .title-rect-content {
@@ -284,7 +286,7 @@ body {
   font-size: 1.5vw;
   background-color: rgb(0, 0, 0, 0.6);
   color: white;
-  border: solid white 3px;
+  border: solid white 2px;
   padding: 10px 20px;
   transition: all 0.2s ease-in-out;
 }
@@ -325,58 +327,57 @@ body {
 /* -- --------------------------------------------------------------------------------------------------------------------  
 -------------------------------------------------------------------------------------------------------------------- */
 
-footer {
-  margin-top: 10%;
+footer{
+  background-color: black;
 }
 
 .footer-section {
-  background-color: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
-  width: 100%;
+  align-items: center;
+  gap: 3vw;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.footer-content-1 {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
-.footer-content-2 {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .footer-text {
-  width: 30%;
+  width: 100%;
+  text-align: center;
 }
 
 .footer-font-size {
   color: white;
-  font-size: 1vw;
+  width: 85%;
+  margin: auto;
 }
 
-.footer-img {
+.footer-container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 30%;
+  width: 50%;
 }
 
-.socials {
-  width: 12%;
-  aspect-ratio: 1/1;
-}
-
-#logo-footer {
+.social{
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
+
+.social img{
+  width: 80%;
+height: auto;
+}
+
+.footer-logo {
+width: 20%;
+
+} 
 
 /* -- --------------------------------------------------------------------------------------------------------------------  
 -------------------------------------------------------------------------------------------------------------------- */
@@ -393,11 +394,10 @@ footer {
   p {
     font-size: 1.7vw;
   }
-
-  .introduction {
-    max-width: 55%;
-  }
 }
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
   h1{
@@ -471,7 +471,7 @@ footer {
     font-size: 4vw;
     background-color: rgb(0, 0, 0, 0.6);
     color: white;
-    border: solid white 3px;
+    border: solid white 2px;
     padding: 10px 20px;
   }
   
@@ -485,15 +485,27 @@ footer {
     height: auto;
   }
 
-  .footer-text {
-    width: 60%;
-  }
-
   .footer-font-size {
     color: white;
+    width: 70%;
+    margin: auto;
     font-size: 2vw;
   }
+
+  .footer-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+  }
+  
+  .footer-logo {
+  width: 30%;
 }
+}
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 425px) {
 
@@ -557,7 +569,7 @@ footer {
     font-size: 5vw;
     background-color: rgb(0, 0, 0, 0.6);
     color: white;
-    border: solid white 3px;
+    border: solid white 2px;
     padding: 10px 20px;
   }
   
@@ -571,15 +583,31 @@ footer {
     height: auto;
   }
 
-  .footer-text {
-    width: 60%;
-  }
-
   .footer-font-size {
     color: white;
-    font-size: 2.5vw;
+    margin: auto;
+    font-size: 3vw;
   }
+  
+  .footer-logo {
+  width: 40%;
 }
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.social img{
+  width: 100%;
+height: auto;
+}
+
+}
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 320px) {
 
@@ -647,9 +675,5 @@ footer {
 
   .card {
     max-width: 60%;
-  }
-
-  .introduction {
-    max-width: 90%;
   }
 }

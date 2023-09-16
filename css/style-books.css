@@ -29,6 +29,18 @@ p {
   text-decoration-thickness: 2px;
 }
 
+.link{
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color:#ff0000;
+  text-decoration-thickness: 2px;
+}
+
+.link:hover{
+  color: #ff0000;
+  transition: all 0.2s ease-in-out;
+}
+
 a {
   text-decoration: none;
   display: flex;
@@ -228,7 +240,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: white;
+  text-align: center;
 }
 
 .imm-over {
@@ -239,7 +253,6 @@ body {
 /* -- --------------------------------------------------------------------------------------------------------------------  
 -------------------------------------------------------------------------------------------------------------------- */
 
-/*============================testo personaggi + imaggine GRIGLIA ================================ */
 .book-grid {
   padding: 5% 0;
   display: flex;
@@ -264,11 +277,8 @@ body {
   max-width: 50%;
 }
 
-
-
-
 /* -- --------------------------------------------------------------------------------------------------------------------  
-  TESTI-------------------------------------------------------------------------------------------------------------------- */
+  -------------------------------------------------------------------------------------------------------------------- */
 
 .section-text {
   display: flex;
@@ -276,7 +286,6 @@ body {
   align-items: center;
   max-width: 70%;
   margin: auto;
-  padding-top: 5%;
   padding-bottom: 5%;
 }
 
@@ -288,9 +297,7 @@ body {
 }
 
 /* -- --------------------------------------------------------------------------------------------------------------------  
-  card-------------------------------------------------------------------------------------------------------------------- */
-
-
+  -------------------------------------------------------------------------------------------------------------------- */
 
   .card {
     display: flex;
@@ -298,7 +305,7 @@ body {
     align-items: center;
     background-color: white;
     box-shadow: -0.3vw -0.3vw 0.6vw 0.5vw rgba(0, 0, 0, 0.48);
-    border: 2px solid white;
+    border: 1px solid white;
     transition: all 0.2s ease-in-out;
   }
   
@@ -307,7 +314,7 @@ body {
   }
   
   .card h2 {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
   
   .all-card img {
@@ -322,55 +329,62 @@ body {
     margin-top: 5%;
   }
 
-.footer-img {
-  width: 100%;
+/* -- --------------------------------------------------------------------------------------------------------------------  
+  -------------------------------------------------------------------------------------------------------------------- */
+
+footer{
+  background-color: black;
 }
-
-
-/*====================================================================== */
 
 .footer-section {
-  background-color: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
-  width: 100%;
-  height: 14vw;
-}
-
-.footer-content {
-  width: 90%;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 3vw;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .footer-text {
-  width: 30%;
+  width: 100%;
+  text-align: center;
 }
 
 .footer-font-size {
   color: white;
-  font-size: 1vw;
+  width: 85%;
+  margin: auto;
 }
 
-.footer-img {
+.footer-container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 30%;
+  width: 50%;
 }
 
-.socials {
-  width: 12%;
-  aspect-ratio: 1/1;
-}
-
-#logo-footer {
+.social{
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 
+.social img{
+  width: 80%;
+height: auto;
+}
 
+.footer-logo {
+width: 20%;
+
+} 
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+  -------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 1024px) {
 
@@ -378,19 +392,10 @@ body {
     font-size: 2.5vw;
   }
 
-  .card-font-size {
-    font-size: 1.7vw;
-  }
-
   p {
     font-size: 1.7vw;
   }
 
-  .introduction {
-    max-width: 55%;
-  }
-
-  /*============================testo personaggi + imaggine GRIGLIA ================================ */
   .book-grid {
     padding: 5% 0;
     display: flex;
@@ -428,8 +433,10 @@ body {
     margin-bottom: 80px;
   }
 
-
 }
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+  -------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
 
@@ -462,23 +469,11 @@ body {
     border: 5px solid white;
   }
 
-  .text-game {
-    margin: 0;
-    padding: 0;
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .imm-over {
     object-fit: cover;
     height: 120vw;
   }
 
-  /*============================testo personaggi + imaggine GRIGLIA ================================ */
   .book-grid {
     padding: 5% 0;
     display: flex;
@@ -510,32 +505,9 @@ body {
     max-width: unset;
   }
 
-  .book-grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 5rem;
-    column-gap: 1rem;
-  
-    width: 80%;
-    margin: auto;
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-
-
-
-
-.book-text2 {
-
-  max-width: 70%;
-
-}
-
-/*============================card finali ================================ */
-
 
 .card h2 {
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
 .all-card img {
@@ -549,13 +521,31 @@ body {
   column-gap: 5%;
   margin-top: 5%;
 }
+
+.footer-font-size {
+  color: white;
+  width: 70%;
+  margin: auto;
+  font-size: 2vw;
 }
 
+.footer-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+}
 
+.footer-logo {
+width: 30%;
+}
 
+}
 
+/* -- --------------------------------------------------------------------------------------------------------------------  
+  -------------------------------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 425px) {
 
   h1 {
     font-size: 12vw;
@@ -568,7 +558,6 @@ body {
   p {
     font-size: 4vw;
   }
-
 
   .presentation-left {
     display: flex;
@@ -587,25 +576,9 @@ body {
     border: 5px solid white;
   }
 
-  .text-game {
-    margin: 0;
-    padding: 0;
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .imm-over {
     object-fit: cover;
     height: 120vw;
-  }
-
-  .introduction {
-    max-width: 75%;
-
   }
 
   .all-cards h2 {
@@ -628,15 +601,6 @@ body {
     margin-bottom: 80px;
   }
 
-  .img-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    width: 70%;
-    margin: auto;
-  }
-
-  /*============================testo personaggi + imaggine GRIGLIA ================================ */
   .book-grid {
     padding: 5% 0;
     display: flex;
@@ -667,10 +631,6 @@ body {
     max-width: 70%;
   }
 
-
-  /*============================card finali ================================ */
-
-
   .card h2 {
     font-size: 3vw;
   }
@@ -687,7 +647,31 @@ body {
     margin-top: 5%;
   }
 
+  .footer-font-size {
+    color: white;
+    margin: auto;
+    font-size: 3vw;
+  }
+  
+  .footer-logo {
+  width: 40%;
 }
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.social img{
+  width: 100%;
+height: auto;
+}
+
+}
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+  -------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 320px) {
 
@@ -702,7 +686,6 @@ body {
   p {
     font-size: 4vw;
   }
-
 
   .presentation-left {
     display: flex;
@@ -721,17 +704,6 @@ body {
     border: 5px solid white;
   }
 
-  .text-game {
-    margin: 0;
-    padding: 0;
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .imm-over {
     object-fit: cover;
     height: 120vw;
@@ -741,18 +713,12 @@ body {
     width: 100%;
   }
 
-
   .book-grid img {
     max-width: 50%;
     height: auto;
     padding: 0;
     margin: 0;
   }
-
-
-
-  /*============================card finali ================================ */
-
 
   .card h2 {
     font-size: 3.5vw;

@@ -15,10 +15,14 @@ p {
   font-size: 1.5vw;
 }
 
-#active{
+.title-rect-content {
+  margin: 0;
+}
+
+#active {
   text-decoration: underline;
   text-underline-offset: 8px;
-  text-decoration-color:#ff0000;
+  text-decoration-color: #ff0000;
   text-decoration-thickness: 2px;
 }
 
@@ -219,7 +223,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: white;
+  text-align: center;
 }
 
 .title-rect-content {
@@ -250,7 +256,7 @@ body {
   align-items: center;
   background-color: white;
   box-shadow: -1vw -1vw 0.6vw 0.5vw rgba(0, 0, 0, 0.48);
-  border: 2px solid white;
+  border: 1px solid white;
   transition: all 0.2s ease-in-out;
 }
 
@@ -274,6 +280,7 @@ body {
   column-gap: 4vw;
   margin: auto;
   padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .container-text {
@@ -282,58 +289,59 @@ body {
 
 /* -- --------------------------------------------------------------------------------------------------------------------  
 -------------------------------------------------------------------------------------------------------------------- */
+
 footer {
-  margin-top: 10%;
+  background-color: black;
 }
 
 .footer-section {
-  background-color: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
-  width: 100%;
-}
-
-.footer-content-1 {
-  width: 90%;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
-.footer-content-2 {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  gap: 3vw;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .footer-text {
-  width: 30%;
+  width: 100%;
+  text-align: center;
 }
 
 .footer-font-size {
   color: white;
-  font-size: 1vw;
+  width: 85%;
+  margin: auto;
 }
 
-.footer-img {
+.footer-container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 30%;
+  width: 50%;
 }
 
-.socials {
-  width: 12%;
-  aspect-ratio: 1/1;
-}
-
-#logo-footer {
+.social {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
+
+.social img {
+  width: 80%;
+  height: auto;
+}
+
+.footer-logo {
+  width: 20%;
+}
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 1024px) {
   h2 {
@@ -347,11 +355,10 @@ footer {
   .card-font-size {
     font-size: 1.7vw;
   }
-
-  .introduction {
-    max-width: 55%;
-  }
 }
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
   h1 {
@@ -387,15 +394,9 @@ footer {
     border: 5px solid white;
   }
 
-  .text-game {
-    margin: 0;
-    padding: 0;
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .imm-over {
+    object-fit: cover;
+    height: 120vw;
   }
 
   .container-text {
@@ -412,20 +413,27 @@ footer {
     padding-top: 5%;
   }
 
-  .imm-over {
-    object-fit: cover;
-    height: 120vw;
-  }
-
-  .footer-text {
-    width: 60%;
-  }
-
   .footer-font-size {
     color: white;
+    width: 70%;
+    margin: auto;
     font-size: 2vw;
   }
+
+  .footer-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+  }
+
+  .footer-logo {
+    width: 30%;
+  }
 }
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 425px) {
   h1 {
@@ -480,15 +488,31 @@ footer {
     padding-top: 5%;
   }
 
-  .footer-text {
-    width: 60%;
-  }
-
   .footer-font-size {
     color: white;
-    font-size: 2.5vw;
+    margin: auto;
+    font-size: 3vw;
   }
+
+  .footer-logo {
+    width: 40%;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+  }
+
+  .social img {
+    width: 100%;
+    height: auto;
+  }
+
 }
+
+/* -- --------------------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 320px) {
   h1 {
@@ -503,17 +527,7 @@ footer {
     font-size: 4vw;
   }
 
-  .box-text {
-    font-size: 4vw;
-  }
-
   .presentation-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .presentation-right {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -530,34 +544,13 @@ footer {
     border: 5px solid white;
   }
 
-  .rect-right {
-    position: absolute;
-    display: flex;
-    right: unset;
-    width: 90vw;
-    height: 90vw;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    box-sizing: border-box;
-    border: 5px solid white;
-  }
-
   .imm-over {
     object-fit: cover;
     height: 120vw;
   }
 
-  .all-cards {
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-  }
-
   .card {
     max-width: 60%;
   }
-
-  .introduction {
-    max-width: 90%;
-  }
+  
 }
